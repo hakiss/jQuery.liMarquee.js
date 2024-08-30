@@ -1,16 +1,19 @@
 # jquery.limarquee
 github repository http://masscode.ru/index.php/k2/item/44-limarquee
 
-#use age
- <div class="container">
+# use age
+``` html5
+<div class="container">
    <ul>
      <li>信息内容一</li>
      <li>信息内容二</li>
    </ul>
  </div>
+```
 
- 方法：
- import Limarquee from 'limarquee'
+# 方法：
+``` javascript
+import Limarquee from 'limarquee'
 const limarquee = new Limarquee('.container')
 limarquee.render({
   direction: left	// 滚动方向，可选 left / right / up / down
@@ -24,3 +27,4 @@ limarquee.render({
   xml: false	    // 加载 xml 文件
   inverthover: false	// 反向，即默认不滚动，鼠 标悬停滚动
 })
+```
